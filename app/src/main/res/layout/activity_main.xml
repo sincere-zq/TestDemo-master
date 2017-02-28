@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yanyu.com.testdemo.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" />
+
+        <ListView
+            android:id="@+id/listTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" />
+
+        <ListView
+            android:id="@+id/listOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_three"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@mipmap/bingtwo" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_two"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@mipmap/fanbibi" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_one"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@mipmap/bing" />-->
+
+        <!--<fragment-->
+        <!--android:id="@+id/fragOne"-->
+        <!--android:name="yanyu.com.testdemo.BlankFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <!--<fragment-->
+        <!--android:id="@+id/fragTwo"-->
+        <!--android:name="yanyu.com.testdemo.BlankTwoFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <!--<fragment-->
+        <!--android:id="@+id/fragThree"-->
+        <!--android:name="yanyu.com.testdemo.BlankThreeFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+    </FrameLayout>
+    <!--<yanyu.com.testdemo.VerticalViewPager-->
+    <!--android:id="@+id/viewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <RelativeLayout
+        android:id="@+id/ll_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_one"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:text="frag一" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_two"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:text="frag二" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_three"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:text="frag三" />-->
+
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewPager"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:background="@android:color/transparent" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_to"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="跳转"
+        android:visibility="gone" />
+</RelativeLayout>
